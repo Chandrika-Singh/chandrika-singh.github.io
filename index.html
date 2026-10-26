@@ -152,6 +152,20 @@
       "description": "Target, message, campaign idea, media plan, creators, CRM, budget and break-even, with a pilot to test first.",
       "areaServed": "Singapore"
      }
+    },
+    {
+     "@type": "Offer",
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 150,
+      "priceCurrency": "SGD"
+     },
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Strategy session (60 minutes)",
+      "description": "A one-hour working session on a single marketing question, with written notes afterwards.",
+      "areaServed": "Singapore"
+     }
     }
    ],
    "url": "https://chandrika-singh.github.io/"
@@ -489,6 +503,13 @@ section,article{scroll-margin-top:68px}
 .book{margin-top:clamp(18px,2.4vw,24px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;padding:clamp(20px,2.6vw,28px);border-radius:20px;background:var(--cobalt-soft)}
 .book p{margin:0;font-family:var(--f-display);font-size:clamp(1.1rem,1.8vw,1.35rem);font-weight:600;color:var(--ink)}
 .book p span{display:block;font-family:var(--f-body);font-size:.9375rem;font-weight:400;color:var(--muted);margin-top:4px}
+.consult{margin-top:clamp(14px,2vw,20px);display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:14px 28px;padding:clamp(18px,2.4vw,24px) clamp(20px,2.6vw,28px);border-radius:20px;background:var(--surface);border:1px solid var(--line)}
+@media (max-width:700px){.consult{grid-template-columns:1fr}.consult .btn{justify-self:start}}
+.consult b{display:block;font-family:var(--f-display);font-size:1.2rem;font-weight:600}
+.consult div span{color:var(--muted);font-size:.9375rem}
+.consult .price{margin:0;display:flex;align-items:baseline;gap:8px}
+.consult .price b{font-size:1.4rem;font-weight:700;color:var(--cobalt)}
+.consult .price span{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
 .enquire{margin-top:clamp(18px,2.4vw,24px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,48px);padding:clamp(22px,3vw,36px);border-radius:22px;background:var(--cobalt-soft);scroll-margin-top:90px}
 @media (max-width:860px){.enquire{grid-template-columns:1fr}}
 .enq-copy h3{font-size:clamp(1.4rem,2.4vw,1.9rem)}
@@ -1151,6 +1172,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
           <div class="proof">Proof: <a href="#euthymol">Euthymol S$138K plan →</a></div>
         </div>
       </div>
+      <div class="consult">
+        <div><b>Strategy session</b><span>60 minutes on your toughest marketing question, with written notes after. The 20-minute intro call stays free.</span></div>
+        <p class="price"><b>S$150</b><span>per session</span></p>
+        <a class="btn" href="#enquire">Book a session</a>
+      </div>
       <div class="enquire" id="enquire">
         <div class="enq-copy">
           <h3>Tell me what you need</h3>
@@ -1172,6 +1198,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
               <label><input type="checkbox" name="Help with" value="AI visibility audit"><span>AI visibility audit</span></label>
               <label><input type="checkbox" name="Help with" value="Market research report"><span>Market research</span></label>
               <label><input type="checkbox" name="Help with" value="Go-to-market plan"><span>Go-to-market plan</span></label>
+              <label><input type="checkbox" name="Help with" value="Strategy session (60 min)"><span>Strategy session</span></label>
               <label><input type="checkbox" name="Help with" value="Hiring for a role"><span>Hiring for a role</span></label>
               <label><input type="checkbox" name="Help with" value="Not sure yet"><span>Not sure yet</span></label>
             </div>
