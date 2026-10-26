@@ -1,0 +1,45 @@
+# Chandrika Singh
+
+> Marketing strategist based in Singapore. MSc Marketing Science candidate at Nanyang Business School, NTU, and Marketing & BD Associate at betheanswer.to, helping brands get named accurately by AI assistants (AEO/GEO). Specialises in brand positioning, consumer research, AI search visibility and integrated marketing campaigns.
+
+- Portfolio: https://chandrika-singh.github.io/
+- LinkedIn: https://www.linkedin.com/in/chandrikasingh4395
+- Email: chandrikasingh4395@gmail.com
+- Location: Singapore
+
+## Experience (5+ years)
+
+- betheanswer.to, Singapore: Marketing & BD Associate (2026 to now). AI search visibility (AEO/GEO) for brands.
+- All Things Fun: Freelance Marketing Consultant and Community Builder (Sep 2025 to Feb 2026).
+- Mai Labs: Brand & Marketing Manager, then Consultant (Nov 2022 to Mar 2025). Led a team of 10+ marketers; helped win an INR 2M public-sector deal.
+- Zee Media Corporation: Assistant Brand Manager (Apr 2021 to Nov 2022). Lifted website and app click-through rate 50% in two months.
+
+## Education
+
+- MSc Marketing Science, Nanyang Business School, NTU (2026 to 2027).
+- MA Public Policy, O.P. Jindal Global University (2017 to 2019).
+- BA, Sophia College, University of Mumbai (2013 to 2016).
+
+Languages: English, Hindi.
+
+## Skills, with proof
+
+- Strategy and positioning: Chief Marketing Strategy Officer of MegaCorp in a Markstrat simulation; the team finished first of six firms with $346M revenue, $191M profit before tax (55% margin) and a share price index 44% above the runner-up.
+- Consumer research: Reddit research (52 respondents), expert interviews, mystery shops, social listening and an AI answer audit (60 answers) for Grand Seiko in Singapore.
+- AI search visibility (AEO/GEO): audited 32 buyer prompts in three languages for a Southeast Asian mobile network (recommended in 3 of 24 unbranded prompts) and wrote a 90-day plan to reach 9; researched AI presence for a hospital group in India.
+- Campaigns and IMC: an 8-week, S$40,000 Singapore campaign for Hey! Chips, sized from TAM (0.95M) to SOM (5,000-8,000 buyers), with #HeyFitCheck and a Crunch Check sampling game.
+- Digital marketing: built the Euthymol deck, a S$138K Singapore plan (#TheLastDetail Valentine's campaign, craftspeople creators, Euthymol Life website and Polished Club CRM, hotel amenity pilot) forecast to add S$234K sales in Year 1 and pay back by month 18.
+- Competitive strategy: blue ocean strategy for The Riverhouse, a heritage venue in Clarke Quay (course project with a live brief).
+
+## Case studies
+
+- [MegaCorp: the plan, the test and the comeback](https://chandrika-singh.github.io/#megacorp): strategy simulation, #1 of six firms.
+- [Getting brands named when customers ask AI](https://chandrika-singh.github.io/#ai): two confidential AEO/GEO engagements.
+- [Grand Seiko: Japan, in every detail](https://chandrika-singh.github.io/#grandseiko): luxury retail research and a 90-day boutique pilot.
+- [Euthymol: the last detail](https://chandrika-singh.github.io/#euthymol): digital marketing, creators, owned website and CRM.
+- [The Riverhouse: a secret worth finding](https://chandrika-singh.github.io/#riverhouse): hospitality audit and blue ocean plan.
+- [Hey! Chips: veggies that fit your day](https://chandrika-singh.github.io/#heychips): integrated campaign and media plan.
+
+## Methods
+
+Segmentation, perceptual mapping, semantic scales, conjoint analysis, TAM/SAM/SOM sizing, blue ocean strategy canvas, mystery shopping, social listening, buyer-prompt testing for AI assistants, schema and llms.txt audits, media planning, break-even pilot design.
