@@ -115,6 +115,35 @@
    "sameAs": [
     "https://www.linkedin.com/in/chandrikasingh4395"
    ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "AI visibility audit",
+      "description": "Tests buyer prompts across ChatGPT, Gemini and Perplexity to see whether a brand is recommended, why rivals win, and a 90-day plan to close the gap.",
+      "areaServed": "Singapore"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Market research report",
+      "description": "Surveys, interviews, mystery shops and social listening turned into segments, a positioning map and market size.",
+      "areaServed": "Singapore"
+     }
+    },
+    {
+     "@type": "Offer",
+     "itemOffered": {
+      "@type": "Service",
+      "name": "Go-to-market plan",
+      "description": "Target, message, campaign idea, media plan, creators, CRM, budget and break-even, with a pilot to test first.",
+      "areaServed": "Singapore"
+     }
+    }
+   ],
    "url": "https://chandrika-singh.github.io/"
   },
   {
@@ -313,7 +342,8 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background
 .nav nav{display:flex;align-items:center;gap:clamp(12px,2.6vw,28px);font-size:.9375rem}
 .nav nav a{text-decoration:none;color:var(--muted)}
 .nav nav a:hover{color:var(--ink)}
-.nav nav a.cta-sm{color:var(--paper);background:var(--ink);padding:7px 14px;border-radius:999px;font-weight:600}
+@media (max-width:420px){.nav nav a.hide-xs{display:none}}
+.nav nav a.cta-sm{color:var(--paper);background:var(--ink);padding:7px 14px;border-radius:999px;font-weight:600;white-space:nowrap}
 @media (max-width:620px){.nav nav a.hide-sm{display:none}}
 
 /* Hero */
@@ -427,6 +457,48 @@ section,article{scroll-margin-top:68px}
 .chatviz .a span{display:flex;align-items:center;gap:6px}
 .chatviz .a i{display:inline-block;height:6px;border-radius:3px;background:rgba(255,255,255,.5)}
 .chatviz .a .you{color:#F2B544}
+
+/* Services */
+.svc{padding-block:clamp(56px,8vw,104px);border-top:1px solid var(--line)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,20px)}
+@media (max-width:900px){.svc-grid{grid-template-columns:1fr}}
+.offer{display:flex;flex-direction:column;gap:14px;padding:clamp(20px,2.4vw,26px);border-radius:20px;background:var(--surface);border:1px solid var(--line)}
+.offer .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--cobalt-soft);color:var(--cobalt)}
+.offer:nth-child(2) .ic{background:var(--marigold-soft);color:var(--marigold-ink)}
+.offer .ic svg{width:22px;height:22px}
+.offer h3{font-size:1.3rem}
+.offer > p{color:var(--muted);margin:0}
+.offer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.9375rem}
+.offer li{display:flex;gap:10px;align-items:flex-start}
+.offer li::before{content:"";flex:none;width:6px;height:6px;margin-top:.6em;border-radius:50%;background:var(--cobalt)}
+.offer .proof{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
+.offer .proof a{color:var(--cobalt);text-decoration:none}
+.book{margin-top:clamp(18px,2.4vw,24px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;padding:clamp(20px,2.6vw,28px);border-radius:20px;background:var(--cobalt-soft)}
+.book p{margin:0;font-family:var(--f-display);font-size:clamp(1.1rem,1.8vw,1.35rem);font-weight:600;color:var(--ink)}
+.book p span{display:block;font-family:var(--f-body);font-size:.9375rem;font-weight:400;color:var(--muted);margin-top:4px}
+.enquire{margin-top:clamp(18px,2.4vw,24px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,48px);padding:clamp(22px,3vw,36px);border-radius:22px;background:var(--cobalt-soft);scroll-margin-top:90px}
+@media (max-width:860px){.enquire{grid-template-columns:1fr}}
+.enq-copy h3{font-size:clamp(1.4rem,2.4vw,1.9rem)}
+.enq-copy p{color:var(--muted);margin:12px 0 0}
+.enq-alt a{color:var(--cobalt)}
+.enq-form{display:grid;gap:14px}
+.enq-form .f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:560px){.enq-form .f2{grid-template-columns:1fr}}
+.enq-form label{display:grid;gap:6px;font-size:.875rem;font-weight:600;color:var(--ink)}
+.enq-form input,.enq-form textarea,.enq-form select{font:400 1rem var(--f-body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 13px;width:100%;box-sizing:border-box}
+.enq-form input:focus,.enq-form textarea:focus,.enq-form select:focus{outline:2px solid var(--cobalt);outline-offset:1px;border-color:var(--cobalt)}
+.enq-form fieldset{border:0;margin:0;padding:0}
+.enq-form legend{font-size:.875rem;font-weight:600;margin-bottom:8px;padding:0}
+.enq-form .chips{display:flex;flex-wrap:wrap;gap:8px}
+.enq-form .chips label{display:block;font-weight:500}
+.enq-form .chips input{position:absolute;opacity:0;width:1px;height:1px}
+.enq-form .chips span{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-size:.875rem;transition:background .2s,color .2s,border-color .2s}
+.enq-form .chips input:checked + span{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+.enq-form .chips input:focus-visible + span{outline:2px solid var(--cobalt);outline-offset:2px}
+.enq-form .btn{justify-self:start}
+.enq-form .hp{position:absolute;left:-9999px}
+.enq-sent{margin:0;padding:12px 14px;border-radius:12px;background:var(--surface);border:1px solid var(--cobalt);color:var(--ink)}
+.contact .btn.light{background:#fff;color:#0F1730;border-color:#fff;margin-top:28px}
 
 /* Case studies */
 .case{padding-block:clamp(56px,8vw,100px);border-top:1px solid var(--line)}
@@ -584,9 +656,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <a class="mark" href="#top" aria-label="Chandrika Singh, home"><i>CS</i>Chandrika Singh</a>
     <nav aria-label="Sections">
       <a href="#experience" class="hide-sm">Experience</a>
-      <a href="#work">Work</a>
+      <a href="#work" class="hide-xs">Work</a>
       <a href="#about" class="hide-sm">About</a>
-      <a href="#contact" class="cta-sm">Contact</a>
+      <a href="#services" class="cta-sm">Work with me</a>
     </nav>
   </div>
 </header>
@@ -599,7 +671,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <p class="lede reveal d2"><b>5+ years</b> in brand strategy, go-to-market and digital marketing across media, tech and Web3. Now <b>Marketing &amp; BD Associate</b> at betheanswer.to and studying for an <b>MSc in Marketing Science</b> at NBS, NTU.</p>
         <div class="cta reveal d3">
           <a class="btn primary" href="#work">See my work ↓</a>
-          <a class="btn" href="https://www.linkedin.com/in/chandrikasingh4395" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="#services">Work with me</a>
         </div>
       </div>
       <figure class="photo reveal d2">
@@ -1037,6 +1109,66 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       </div>
     </div>
   </section>
+  <section class="svc" id="services">
+    <div class="wrap">
+      <div class="sec-head"><h2>Work with me</h2><p>Three ways I can help your brand, each built on research I run myself and a plan you can test small before you spend big.</p></div>
+      <div class="svc-grid">
+        <div class="offer">
+          <span class="ic"><svg><use href="#i-spark"/></svg></span>
+          <h3>AI visibility audit</h3>
+          <p>Find out whether ChatGPT, Gemini and Perplexity recommend your brand, and what it takes to get named.</p>
+          <ul><li>Buyer prompts tested across AI assistants</li><li>Where rivals win, and why</li><li>A 90-day plan to close the gap</li></ul>
+          <div class="proof">Proof: <a href="#ai">32-prompt audit, 3 languages →</a></div>
+        </div>
+        <div class="offer">
+          <span class="ic"><svg><use href="#i-search"/></svg></span>
+          <h3>Market research report</h3>
+          <p>Clear answers on who buys, why, and where your brand stands, before you commit budget.</p>
+          <ul><li>Surveys, interviews, mystery shops and social listening</li><li>Segments, positioning map and market size</li><li>Findings with honest sample sizes</li></ul>
+          <div class="proof">Proof: <a href="#grandseiko">Grand Seiko field research →</a></div>
+        </div>
+        <div class="offer">
+          <span class="ic"><svg><use href="#i-target"/></svg></span>
+          <h3>Go-to-market plan</h3>
+          <p>A launch or relaunch plan with the channels, budget and numbers that say whether it worked.</p>
+          <ul><li>Target, message and campaign idea</li><li>Media plan, creators and CRM</li><li>Budget, break-even and a pilot to test first</li></ul>
+          <div class="proof">Proof: <a href="#euthymol">Euthymol S$138K plan →</a></div>
+        </div>
+      </div>
+      <div class="enquire" id="enquire">
+        <div class="enq-copy">
+          <h3>Tell me what you need</h3>
+          <p>Answer a few quick questions and I'll reply within two working days, usually with a suggestion for a free 20-minute call.</p>
+          <p class="enq-alt">Prefer email? <a href="mailto:chandrikasingh4395@gmail.com">chandrikasingh4395@gmail.com</a></p>
+        </div>
+        <form class="enq-form" action="https://formsubmit.co/chandrikasingh4395@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New enquiry from your portfolio site">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://chandrika-singh.github.io/?sent=1#enquire">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="f2">
+            <label>Your name<input name="Name" required autocomplete="name"></label>
+            <label>Work email<input type="email" name="email" required autocomplete="email"></label>
+          </div>
+          <label>Company or brand<input name="Company" autocomplete="organization"></label>
+          <fieldset><legend>What do you need help with?</legend>
+            <div class="chips">
+              <label><input type="checkbox" name="Help with" value="AI visibility audit"><span>AI visibility audit</span></label>
+              <label><input type="checkbox" name="Help with" value="Market research report"><span>Market research</span></label>
+              <label><input type="checkbox" name="Help with" value="Go-to-market plan"><span>Go-to-market plan</span></label>
+              <label><input type="checkbox" name="Help with" value="Hiring for a role"><span>Hiring for a role</span></label>
+              <label><input type="checkbox" name="Help with" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </fieldset>
+          <label>Tell me a little about it<textarea name="Details" rows="4" required placeholder="What you sell, who to, and what you'd like to change"></textarea></label>
+          <label>When do you need it?<select name="Timeline"><option>Within a month</option><option>1 to 3 months</option><option>Just exploring</option></select></label>
+          <button class="btn primary" type="submit">Send enquiry →</button>
+          <p class="enq-sent" id="enqSent" hidden role="status">Thanks, your enquiry is on its way. I'll reply within two working days.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <section class="faq" id="faq">
     <div class="wrap">
       <div class="sec-head"><h2>Quick answers</h2><p>The short version, for recruiters, hiring managers and AI assistants.</p></div>
@@ -1058,6 +1190,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div>
       <div class="eyebrow" style="margin-bottom:16px">Contact</div>
       <h2>Have a market that needs reading? Let's talk.</h2>
+      <a class="btn light" href="#enquire">Tell me what you need →</a>
     </div>
     <div class="links">
       <div class="row"><span>Email</span><button type="button" class="copy-btn" id="copyEmail"><span id="emailText">chandrikasingh4395@gmail.com</span><small id="copyLabel">Copy</small></button></div>
@@ -1169,6 +1302,7 @@ hbars("igBars",[["Neighbouring club",69000,0],["YANG (club)",9663,1],["Mimi (res
 
 /* Copy email */
 (function(){
+  try{if(new URLSearchParams(location.search).get("sent")==="1"){const m=document.getElementById("enqSent");if(m)m.hidden=false}}catch(e){}
   const btn=document.getElementById("copyEmail"),lab=document.getElementById("copyLabel"),txt=document.getElementById("emailText");
   btn.addEventListener("click",()=>{
     const done=()=>{lab.textContent="Copied";setTimeout(()=>lab.textContent="Copy",1800)};
