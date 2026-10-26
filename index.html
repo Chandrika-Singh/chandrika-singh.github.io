@@ -121,12 +121,17 @@
      "itemOffered": {
       "@type": "Service",
       "name": "AI visibility audit",
-      "description": "Tests buyer prompts across ChatGPT, Gemini and Perplexity to see whether a brand is recommended, why rivals win, and a 90-day plan to close the gap.",
+      "description": "Tests buyer prompts across ChatGPT, Gemini and Perplexity to see whether a brand is recommended, why rivals win, and a 90-day plan to close the gap. Delivered through betheanswer.to.",
       "areaServed": "Singapore"
      }
     },
     {
      "@type": "Offer",
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 2500,
+      "priceCurrency": "SGD"
+     },
      "itemOffered": {
       "@type": "Service",
       "name": "Market research report",
@@ -136,6 +141,11 @@
     },
     {
      "@type": "Offer",
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 3500,
+      "priceCurrency": "SGD"
+     },
      "itemOffered": {
       "@type": "Service",
       "name": "Go-to-market plan",
@@ -468,6 +478,9 @@ section,article{scroll-margin-top:68px}
 .offer .ic svg{width:22px;height:22px}
 .offer h3{font-size:1.3rem}
 .offer > p{color:var(--muted);margin:0}
+.offer > p.price{display:flex;align-items:baseline;gap:10px;color:var(--ink);margin-top:-6px}
+.offer .price b{font-family:var(--f-display);font-size:1.25rem;font-weight:700;color:var(--cobalt)}
+.offer .price span{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
 .offer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.9375rem}
 .offer li{display:flex;gap:10px;align-items:flex-start}
 .offer li::before{content:"";flex:none;width:6px;height:6px;margin-top:.6em;border-radius:50%;background:var(--cobalt)}
@@ -1116,6 +1129,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <div class="offer">
           <span class="ic"><svg><use href="#i-spark"/></svg></span>
           <h3>AI visibility audit</h3>
+          <p class="price"><b>Via betheanswer.to</b><span>pricing on request</span></p>
           <p>Find out whether ChatGPT, Gemini and Perplexity recommend your brand, and what it takes to get named.</p>
           <ul><li>Buyer prompts tested across AI assistants</li><li>Where rivals win, and why</li><li>A 90-day plan to close the gap</li></ul>
           <div class="proof">Proof: <a href="#ai">32-prompt audit, 3 languages →</a></div>
@@ -1123,6 +1137,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <div class="offer">
           <span class="ic"><svg><use href="#i-search"/></svg></span>
           <h3>Market research report</h3>
+          <p class="price"><b>From S$2,500</b><span>2 to 3 weeks</span></p>
           <p>Clear answers on who buys, why, and where your brand stands, before you commit budget.</p>
           <ul><li>Surveys, interviews, mystery shops and social listening</li><li>Segments, positioning map and market size</li><li>Findings with honest sample sizes</li></ul>
           <div class="proof">Proof: <a href="#grandseiko">Grand Seiko field research →</a></div>
@@ -1130,6 +1145,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <div class="offer">
           <span class="ic"><svg><use href="#i-target"/></svg></span>
           <h3>Go-to-market plan</h3>
+          <p class="price"><b>From S$3,500</b><span>3 to 4 weeks</span></p>
           <p>A launch or relaunch plan with the channels, budget and numbers that say whether it worked.</p>
           <ul><li>Target, message and campaign idea</li><li>Media plan, creators and CRM</li><li>Budget, break-even and a pilot to test first</li></ul>
           <div class="proof">Proof: <a href="#euthymol">Euthymol S$138K plan →</a></div>
@@ -1138,7 +1154,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <div class="enquire" id="enquire">
         <div class="enq-copy">
           <h3>Tell me what you need</h3>
-          <p>Answer a few quick questions and I'll reply within two working days, usually with a suggestion for a free 20-minute call.</p>
+          <p>Answer a few quick questions and I'll reply within two working days, usually with a suggestion for a free 20-minute call. Final pricing depends on scope; research costs such as survey panels are billed at cost.</p>
           <p class="enq-alt">Prefer email? <a href="mailto:chandrikasingh4395@gmail.com">chandrikasingh4395@gmail.com</a></p>
         </div>
         <form class="enq-form" action="https://formsubmit.co/chandrikasingh4395@gmail.com" method="POST">
