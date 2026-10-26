@@ -410,36 +410,23 @@ section,article{scroll-margin-top:68px}
 
 /* Bento */
 .work{padding-block:clamp(56px,8vw,104px);border-top:1px solid var(--line)}
-.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media (max-width:900px){.bento{grid-template-columns:1fr 1fr}}
-@media (max-width:600px){.bento{grid-template-columns:1fr}}
-.card{position:relative;display:block;border-radius:22px;overflow:hidden;text-decoration:none;color:#fff;background:var(--deep);aspect-ratio:4/3;min-width:0;isolation:isolate}
-.card.wide{grid-column:span 2;aspect-ratio:auto;min-height:320px}
-.card.ai{grid-row:span 2;aspect-ratio:auto;min-height:320px}
-.card.eu img{object-position:20% 55%}
-@media (max-width:900px){.card.eu{grid-column:auto;aspect-ratio:4/3;min-height:0}.card.ai{grid-row:auto;aspect-ratio:4/3;min-height:0}.bento > .card:last-child{grid-column:span 2;aspect-ratio:auto;min-height:280px}}
-@media (max-width:600px){.card.wide,.bento > .card:last-child{grid-column:auto;aspect-ratio:4/3;min-height:0}}
-.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1);z-index:-2}
-.card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,11,22,0) 30%,rgba(7,11,22,.88) 100%)}
-.card:hover img{transform:scale(1.05)}
-.card.wide img{object-position:50% 0}
-.card.gs img{object-position:80% 50%}
-@media (min-width:901px){.card.gs{aspect-ratio:auto}}
-.card .meta{position:absolute;left:0;right:0;bottom:0;padding:20px 22px;display:flex;flex-direction:column;gap:6px}
-.card .meta .pill{align-self:flex-start;background:rgba(255,255,255,.16);color:#fff;backdrop-filter:blur(6px)}
-.card h3{font-size:clamp(1.2rem,2vw,1.55rem);color:#fff}
-.card .out{font-size:.875rem;color:rgba(255,255,255,.82)}
-.card .arrow{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.16);display:grid;place-items:center;backdrop-filter:blur(6px);transition:background .25s}
-.card:hover .arrow{background:var(--cobalt)}
-.card.ai{background:radial-gradient(120% 90% at 85% 0%,#2F49F5 0%,#16205A 45%,#0B1024 100%)}
-.card.ai::after{background:linear-gradient(180deg,rgba(7,11,22,0) 40%,rgba(7,11,22,.75) 100%)}
-.chatviz{position:absolute;inset:68px 18px auto;display:flex;flex-direction:column;gap:8px;z-index:-1}
-.chatviz .q{align-self:flex-end;background:#fff;color:#111A2F;font-size:.75rem;padding:7px 11px;border-radius:12px 12px 2px 12px;max-width:80%}
-.chatviz .a{background:rgba(255,255,255,.12);font-size:.75rem;padding:9px 11px;border-radius:12px 12px 12px 2px;max-width:88%;display:grid;gap:5px}
+.bento{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2vw,22px)}
+@media (max-width:760px){.bento{grid-template-columns:1fr}}
+.card{position:relative;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;min-width:0;border-radius:20px;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(16,24,40,.10);border-color:var(--cobalt)}
+.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--paper);border-bottom:1px solid var(--line)}
+.card .meta{display:flex;flex-direction:column;gap:8px;padding:18px 20px 20px}
+.card .meta .pill{align-self:flex-start}
+.card h3{font-size:clamp(1.15rem,1.6vw,1.4rem);color:var(--ink)}
+.card .out{font-size:.9rem;color:var(--muted)}
+.card .arrow{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--ink);display:grid;place-items:center;box-shadow:0 2px 8px rgba(16,24,40,.18);transition:background .25s,color .25s}
+.card:hover .arrow{background:var(--cobalt);color:#fff}
+.card.ai .chatviz{min-width:0;aspect-ratio:16/9;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:clamp(16px,2.4vw,26px);background:radial-gradient(120% 90% at 85% 0%,#2F49F5 0%,#16205A 45%,#0B1024 100%);border-bottom:1px solid var(--line)}
+.chatviz .q{align-self:flex-end;background:#fff;color:#111A2F;font-size:.8rem;padding:7px 12px;border-radius:12px 12px 2px 12px;max-width:72%}
+.chatviz .a{background:rgba(255,255,255,.14);color:#fff;font-size:.8rem;padding:10px 12px;border-radius:12px 12px 12px 2px;max-width:82%;display:grid;gap:6px}
 .chatviz .a span{display:flex;align-items:center;gap:6px}
-.chatviz .a i{display:inline-block;height:6px;border-radius:3px;background:rgba(255,255,255,.55)}
+.chatviz .a i{display:inline-block;height:6px;border-radius:3px;background:rgba(255,255,255,.5)}
 .chatviz .a .you{color:#F2B544}
-@media (max-width:900px){.card .chatviz{inset:68px 18px auto 18px}.card .chatviz > :nth-child(n+3){display:none}}
 
 /* Case studies */
 .case{padding-block:clamp(56px,8vw,100px);border-top:1px solid var(--line)}
@@ -633,7 +620,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <a class="tile" href="#megacorp"><span class="ic"><svg><use href="#i-search"/></svg></span><h3>Strategy &amp; research</h3><span class="proof">#1 of 6</span><p>firms in a strategy simulation, plus field research and pilots for Grand Seiko</p><span class="go">MegaCorp →</span></a>
       </div>
       <div class="methods" aria-label="Methods I use">
-        <span>Segmentation</span><span>Perceptual mapping</span><span>Conjoint</span><span>TAM · SAM · SOM</span><span>Blue ocean strategy</span><span>Mystery shopping</span><span>Social listening</span><span>Prompt testing</span><span>Schema &amp; llms.txt audits</span><span>Media planning</span><span>Break-even pilots</span><span>Go-to-market</span><span>Performance marketing</span><span>SEO &amp; SEM</span><span>Community building</span><span>Google Analytics</span><span>Meta Ads</span><span>Canva</span><span>Creator marketing</span><span>CRM journeys</span>
+        <span>Go-to-market</span><span>Segmentation &amp; positioning</span><span>TAM · SAM · SOM</span><span>Consumer research</span><span>Media planning</span><span>SEO &amp; SEM</span><span>Performance marketing</span><span>CRM journeys</span><span>Creator marketing</span><span>AI prompt testing</span><span>Analytics</span><span>Break-even pilots</span>
       </div>
     </div>
   </section>
@@ -690,14 +677,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div class="wrap">
       <div class="sec-head"><h2>Selected work</h2><p>Every project starts with research I ran myself and ends with a decision and a way to measure it.</p></div>
       <div class="bento">
-        <a class="card wide" href="#megacorp"><img width="1200" height="675" src="img/mega.jpg" alt="MegaCorp strategy simulation deck cover with the five-person team" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">Strategy simulation</span><h3>MegaCorp: eight periods at the top</h3><span class="out">#1 in revenue, profit and share price of six firms</span></div></a>
-        <a class="card gs" href="#grandseiko"><img width="1200" height="675" src="img/gs.jpg" alt="Grand Seiko in Singapore marketing strategy deck cover" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">Luxury retail</span><h3>Grand Seiko in Singapore</h3><span class="out">Turning boutique visits into local sales</span></div></a>
-        <a class="card wide eu" href="#euthymol"><img width="1400" height="788" src="img/eu-1.jpg" alt="Euthymol digital marketing deck cover with the pink toothpaste tube" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">Digital marketing</span><h3>Euthymol: the last detail</h3><span class="out">Making a heritage toothpaste a style choice in Singapore</span></div></a>
+        <a class="card" href="#megacorp"><img width="1200" height="675" src="img/mega.jpg" alt="MegaCorp strategy simulation deck cover with the five-person team" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">Strategy simulation</span><h3>MegaCorp: eight periods at the top</h3><span class="out">#1 in revenue, profit and share price of six firms</span></div></a>
+        <a class="card" href="#grandseiko"><img width="1200" height="675" src="img/gs.jpg" alt="Grand Seiko in Singapore marketing strategy deck cover" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">Luxury retail</span><h3>Grand Seiko in Singapore</h3><span class="out">Turning boutique visits into local sales</span></div></a>
+        <a class="card" href="#euthymol"><img width="1400" height="788" src="img/eu-1.jpg" alt="Euthymol digital marketing deck cover with the pink toothpaste tube" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">Digital marketing</span><h3>Euthymol: the last detail</h3><span class="out">Making a heritage toothpaste a style choice in Singapore</span></div></a>
         <a class="card ai" href="#ai">
-          <div class="chatviz" aria-hidden="true"><div class="q">Best mobile plan for students?</div><div class="a"><span><i style="width:60%"></i></span><span><i style="width:44%"></i></span><span><i style="width:52%"></i></span><span class="you">Your brand: not mentioned</span></div><div class="q">Best hospital for neuro-rehab?</div><div class="a"><span><i style="width:56%"></i></span><span><i style="width:48%"></i></span><span class="you">Your brand: not in the top 10</span></div><div class="q">Which one should I trust?</div><div class="a"><span><i style="width:64%"></i></span><span><i style="width:40%"></i></span></div></div>
+          <div class="chatviz" aria-hidden="true"><div class="q">Best mobile plan for students?</div><div class="a"><span><i style="width:60%"></i></span><span><i style="width:44%"></i></span><span><i style="width:52%"></i></span><span class="you">Your brand: not mentioned</span></div><div class="q">Best hospital for neuro-rehab?</div><div class="a"><span><i style="width:56%"></i></span><span><i style="width:48%"></i></span><span class="you">Your brand: not in the top 10</span></div></div>
           <span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">AI search · AEO/GEO</span><h3>Getting brands named by AI</h3><span class="out">Two confidential audits at betheanswer.to</span></div></a>
-        <a class="card" href="#heychips"><img width="1200" height="675" src="img/chips.jpg" alt="Hey! Chips campaign mock-ups on office and MRT digital screens" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">IMC campaign</span><h3>Hey! Chips: veggies that fit your day</h3><span class="out">S$40K, 8 weeks, 2,000+ trials planned</span></div></a>
-        <a class="card" href="#riverhouse"><img width="1400" height="788" src="img/river-16.jpg" alt="The Riverhouse Secret Mansion Night concept slide" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">Hospitality</span><h3>The Riverhouse: a secret worth finding</h3><span class="out">A blue ocean plan for Chinese guests</span></div></a>
+        <a class="card" href="#heychips"><img width="1400" height="788" src="img/chips-14.jpg" alt="Hey! Chips campaign key visual: veggies that fit your day" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">IMC campaign</span><h3>Hey! Chips: veggies that fit your day</h3><span class="out">S$40K, 8 weeks, 2,000+ trials planned</span></div></a>
+        <a class="card" href="#riverhouse"><img width="1400" height="788" src="img/river-14.jpg" alt="The Riverhouse strategy canvas comparing it with rival Clarke Quay venues" loading="lazy"><span class="arrow"><svg width="18" height="18"><use href="#i-arrow"/></svg></span><div class="meta"><span class="pill">Hospitality</span><h3>The Riverhouse: a secret worth finding</h3><span class="out">A blue ocean plan for Chinese guests</span></div></a>
       </div>
     </div>
   </section>
